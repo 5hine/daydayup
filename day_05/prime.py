@@ -3,8 +3,9 @@ from math import sqrt
 num = int(input("请输入一个正整数:"))
 end = int(sqrt(num))+1
 is_prime = True
-for i in range(end,0,-1):
-    if num % i == 0:
+for i in range(2,end+1):
+    if num % 2 == 0 or num % i == 0:
+
         is_prime = False
         break
 
